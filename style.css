@@ -1,0 +1,408 @@
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-VariableFont_opsz,wght.ttf)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div.header {
+    font-family: 'Inter';
+    color: #030E6F;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+div.header div.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.logo h1 {
+    font-weight: 900;
+}
+
+div.header div.nav {
+    width: 50%;
+    text-align: right;
+    font-weight: 600;
+}
+
+div.header div.nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 2%;
+}
+
+div.about {
+    font-family: Inter;
+    position: relative;
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(29, 4, 36);
+    color: white;
+    height: 500px;  
+}
+
+div.about div.text {
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+.info-text {
+    margin-top: 6%;
+    display: inline-block;
+    margin-left: 15%;
+    border: 1px solid #9166F0;
+    border-radius: 5px;
+    color: 9166F0;
+    padding: 2px;
+}
+
+.text-2 {
+    margin-top: 4%;
+    color: lightgray;
+
+}
+
+.buttons {
+    margin-top: 4%;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  /* Эффект при наведении */
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+/* Primary кнопка */
+.button-primary {
+    background: linear-gradient(90deg, #4B0082, #8A2BE2);
+  }
+
+  /* Secondary кнопка */
+  .button-secondary {
+    background: linear-gradient(90deg, #2F0047, #4B0082);
+  }
+
+  /* Общие стили */
+  .second {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 40px;
+  }
+
+  /* Контейнер секции */
+  .learning-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Заголовок */
+  .learning-section h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  /* Сетка для карточек */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  /* Стили для карточки */
+  .card {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Круг с номером */
+  .card-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #6844b6, #6844b6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+
+  /* Контент карточки */
+  .card-content {
+    flex: 1;
+  }
+
+  /* Заголовок карточки */
+  .card-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+  }
+
+  /* Описание карточки */
+  .card-content p {
+    font-size: 16px;
+    color: #B0B0B0;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  footer {
+    background-color: #0A1A2F;
+    color: white;
+    padding: 30px 40px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Контейнер для содержимого футера */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  /* Левая часть футера */
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* Название */
+  .footer-left h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  /* Телефон и email */
+  .footer-left p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  /* Ссылка email */
+  .footer-left a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  /* Правая часть футера (круги) */
+  .footer-right {
+    display: flex;
+    gap: 10px;
+  }
+
+  /* Стили для кругов */
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .circle.red {
+    background-color: #FF4D4D;
+  }
+
+  .circle.blue {
+    background-color: #4D79FF;
+  }
+
+  .circle.cyan {
+    background-color: #4DFFFF;
+  }
+
+  /* Нижняя строка футера */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #B0B0B0;
+  }
+
+  /* Ссылка в нижней части */
+  .footer-bottom a {
+    color: #B0B0B0;
+    text-decoration: underline;
+  }
+
+.line {
+    color: grey;
+    border-color: grey;
+    margin: 20px;
+}
+
+/* lessons */
+
+.third {
+    font-family: Arial, sans-serif; 
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+
+}
+
+.lessons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.lesson-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lesson-card h2 {
+    color: #553C9A;
+    margin: 0 0 10px;
+}
+
+.lesson-card p {
+    color: #666;
+}
+
+.lesson-card button {
+    background-color: #7F56D9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.lesson-card button:hover {
+    background-color: #6844b6;
+}
+
+.button-link {
+    display: inline-block; 
+    background-color: #7F56D9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+    text-align: center; 
+}
+
+.button-link:hover {
+    background-color: #6844b6;
+}
+
+.console h1 {
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.console {
+    height: 600px;
+
+}
+
+.console iframe {
+    margin-left: 40px;
+}
+
+
+/* question */
+.question{
+    background-color: rgb(255, 255, 255);
+
+}
+.layout{
+    width: 600px;
+    margin: auto;
+}
+.accordion{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #7F56D9;
+    border-radius: 10px;
+}
+.accordion__question p{
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+.accordion__answer p{
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background: #6844b6;
+    border-radius: 10px; 
+}
+.accordion:hover{
+    cursor: pointer;
+}
+.accordion__answer {
+    display: none;
+} 
+.accordion.active .accordion__answer {
+    display: block;
+}
+
+

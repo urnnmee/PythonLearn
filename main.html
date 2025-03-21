@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>Изучаем Python</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="#thirdone">Уроки</a></li>
+                    <li><a href="#secondone">О курсе</a></li>
+                    <li><a>Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="info-text">
+            бесплатный курс
+        </div>
+        <div class="text">
+            <h1>Добро пожаловать в мир Python</h1>
+            <div class="text-2">
+                <p>Изучайте Python с нашими интерактивными уроками и тестами</p>
+            </div>
+            <div class="buttons">
+                <button class="button button-primary">Записаться</button>
+                <button class="button button-secondary">Подробнее</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="second" id="secondone">
+        <section class="learning-section">
+            <h1>Вы научитесь</h1>
+            <div class="cards">
+              <div class="card">
+                <div class="card-number">1</div>
+                <div class="card-content">
+                  <h3>Управлять скоростью и качеством разработки веб-приложений</h3>
+                  <p>Научитесь применять фреймворк Django и шаблоны проектирования</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-number">2</div>
+                <div class="card-content">
+                  <h3>Работать в команде с помощью распределенной системы контроля версий</h3>
+                  <p>Сможете создавать репозитории и вносить изменения в код на GitHub, разрешать конфликты версий</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-number">3</div>
+                <div class="card-content">
+                  <h3>Проектировать взаимодействие приложения с базой данных</h3>
+                  <p>Освоите работу с SQL на примере PostgreSQL, сможете настраивать библиотеку SQLAlchemy</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-number">4</div>
+                <div class="card-content">
+                  <h3>Создавать удобный интерфейс приложения</h3>
+                  <p>Разберетесь с архитектурой и постройте функциональный веб-API</p>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+
+    <div class="third" id="thirdone">
+        <h1>НАШИ УРОКИ</h1>
+    <div class="lessons-container">
+        <div class="lesson-card">
+            <h2>1. Введение в Python</h2>
+            <p>Знакомство с языком программирования Python, его преимуществами и сферами применения. Написание первой программы ("Hello, world!").</p>
+            <a href="lecture1.html" class="button-link">Изучить</a>
+        </div>
+        <div class="lesson-card">
+            <h2>2. Переменные, типы данных и операторы</h2>
+            <p>Работа с переменными, основные типы данных (числа, строки, булевы значения), арифметические и логические операторы.</p>
+            <button onclick="window.location.href='lecture2.html'">Изучить</button>
+        </div>
+        <div class="lesson-card">
+            <h2>3. Условные операторы и циклы</h2>
+            <p>Управление потоком выполнения программы с помощью if, elif, else. Циклы for и while для повторения блоков кода.</p>
+            <button onclick="window.location.href='lecture3.html'">Изучить</button>
+        </div>
+        <div class="lesson-card">
+            <h2>4. Строки и списки</h2>
+            <p>Работа со строками (индексация, срезы, методы строк). Списки как упорядоченные коллекции данных, методы работы со списками.</p>
+            <button onclick="window.location.href='lecture4.html'">Изучить</button>
+        </div>
+        <div class="lesson-card">
+            <h2>5. Функции</h2>
+            <p>Создание собственных функций для организации и повторного использования кода. Параметры функций, возвращаемые значения.</p>
+            <button onclick="window.location.href='lecture4.html'">Изучить</button>
+        </div>
+        <div class="lesson-card">
+            <h2>6. Словари и кортежи</h2>
+            <p>Словари как неупорядоченные коллекции данных, работа с ключами и значениями. Кортежи как неизменяемые последовательности данных.
+            </p>
+            <button onclick="window.location.href='lecture4.html'">Изучить</button>
+        </div>
+
+        <div class="lesson-card">
+            <h2>7. Работа с файлами</h2>
+            <p>Чтение и запись данных в файлы различных форматов (текстовые, CSV).</p>
+            <button onclick="window.location.href='lecture4.html'">Изучить</button>
+        </div>
+        <div class="lesson-card">
+            <h2>8. Модули и библиотеки</h2>
+            <p>Подключение и использование внешних модулей и библиотек Python для решения различных задач (например, math, random, datetime).</p>
+            <button onclick="window.location.href='lecture4.html'">Изучить</button>
+        </div>
+    </div>
+    </div>
+    
+    <div class="console">
+        <h1>Консоль Python</h1>
+        <iframe style="width: 90%; height: 90%; border: none;" name="embedded_python_anywhere" src="https://www.pythonanywhere.com/embedded3/"></iframe>
+    </div>
+
+    <div class="question">
+        <h1 style="text-align:center; font-family:'Inter'">Вопросы и ответы</h2>
+        <div class="layout">
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Что такое Python и почему стоит изучать этот язык?</p>
+                </div>
+                <div class="accordion__answer">
+                    <p>Python — это высокоуровневый язык программирования, который легко учить и использовать. Он широко применяется в различных областях, таких как веб-разработка, обработка данных, искусственный интеллект и автоматизация задач. Python известен своей простотой и понятным синтаксисом, что делает его идеальным языком для начинающих.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Как установить Python на мой компьютер?</p>
+                </div>
+                <div class="accordion__answer">
+                    <p>
+                        Для того чтобы начать работать с Python, нужно установить его на свой компьютер. Это можно сделать, скачав последнюю версию Python с официального сайта (https://www.python.org/downloads/). После установки также рекомендуется установить редактор кода, например, VS Code или PyCharm, чтобы писать и запускать программы.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Какие программы можно создать с помощью Python?</p>
+                </div>
+                <div class="accordion__answer">
+                    <p>С помощью Python можно создавать самые разные программы: от простых калькуляторов и игр до сложных веб-приложений и программ для анализа данных. В этом курсе мы будем учиться создавать небольшие проекты, такие как игры, чат-боты или программы для работы с файлами.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Нужно ли знать математику для изучения Python?</p>
+                </div>
+                <div class="accordion__answer">
+                    <p>Хотя знание математики может быть полезным в некоторых случаях, для начала изучения Python достаточно базовых математических знаний. Важно понимать, как работать с числами, простыми операциями (сложение, вычитание, умножение и деление) и основами логики.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Как мне лучше учиться Python?</p>
+                </div>
+                <div class="accordion__answer">
+                    <p>Для успешного освоения Python важно практиковаться. Читайте теорию, но обязательно пишите код самостоятельно, решайте задачи и создавайте свои проекты. Важно не бояться ошибок — они помогают учиться. Мы будем выполнять упражнения и задачи, которые помогут вам закрепить материал.</p>
+                </div>
+            </div>
+    </div>
+    <script>
+        document.querySelectorAll(".accordion").forEach((accordion) => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-left">
+            <h3>Научим Python</h3>
+            <p>+7 (977) 627 26 19</p>
+            <p><a href="mailto:email@python-soft.ru">email@python-soft.ru</a></p>
+          </div>
+          <div class="footer-right">
+            <div class="circle red"></div>
+            <div class="circle blue"></div>
+            <div class="circle cyan"></div>
+          </div>
+        </div>
+        <hr class="line">
+        <div class="footer-bottom">
+
+          <p>© Научим Python 2000-2025. Все права защищены.</p>
+          <p><a href="#">Политика конфиденциальности</a></p>
+        </div>
+      </footer>
+</body>
+</html>

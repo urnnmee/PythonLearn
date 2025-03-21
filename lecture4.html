@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title> Строки и списки в Python</title>
+    <h1>Строки и списки в Python</h1>
+
+<h2>Строки</h2>
+<p>Строки в Python — это последовательности символов, которые записываются в одинарных (' ') или двойных (" ") кавычках. Они неизменяемы, то есть после создания строки нельзя изменить отдельные её символы, но можно создавать новые строки на основе старых.</p>
+
+<ul>
+    <li><strong>Индексация:</strong> каждый символ в строке имеет свой индекс, начиная с 0. Например, в строке "Python" символ P — это s[0], а n — s[5]. Отрицательные индексы считаются с конца: s[-1] — последний символ.</li>
+    <li><strong>Срезы:</strong> чтобы взять часть строки, используется синтаксис [начало:конец:шаг]. Например, "Python"[1:4] вернёт "yth". Если шаг не указан, он равен 1.</li>
+    <li><strong>Методы строк:</strong> Python предлагает множество встроенных методов для работы со строками:
+        <ul>
+            <li><code>.upper()</code> — переводит строку в верхний регистр.</li>
+            <li><code>.lower()</code> — в нижний регистр.</li>
+            <li><code>.replace("старое", "новое")</code> — заменяет подстроку.</li>
+            <li><code>.strip()</code> — убирает пробелы в начале и конце строки.</li>
+            <li><code>.split()</code> — разбивает строку на список по указанному разделителю (например, пробелу).</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>Пример:</strong></p>
+<pre><code>
+s = "Hello, World!"
+print(s[0])         # H
+print(s[7:12])      # World
+print(s.upper())    # HELLO, WORLD!
+print(s.split())    # ['Hello,', 'World!']
+</code></pre>
+
+<h2>Списки</h2>
+<p>Списки — это упорядоченные изменяемые коллекции данных, которые записываются в квадратных скобках [ ]. В список можно помещать элементы разных типов: числа, строки, даже другие списки.</p>
+
+<ul>
+    <li><strong>Индексация и срезы:</strong> работают так же, как со строками. Например, в списке [10, 20, 30] элемент 20 доступен по индексу [1], а срез [0:2] вернёт [10, 20].</li>
+    <li><strong>Изменение списков:</strong> в отличие от строк, списки можно менять. Например, <code>lst[0] = 5</code> заменит первый элемент.</li>
+    <li><strong>Методы списков:</strong>
+        <ul>
+            <li><code>.append(x)</code> — добавляет элемент x в конец списка.</li>
+            <li><code>.insert(i, x)</code> — вставляет элемент x на позицию i.</li>
+            <li><code>.remove(x)</code> — удаляет первое вхождение элемента x.</li>
+            <li><code>.pop(i)</code> — удаляет и возвращает элемент по индексу i (по умолчанию последний).</li>
+            <li><code>.sort()</code> — сортирует список по возрастанию.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>Пример:</strong></p>
+<pre><code>
+numbers = [1, 2, 3]
+numbers.append(4)       # [1, 2, 3, 4]
+numbers.insert(1, 10)   # [1, 10, 2, 3, 4]
+numbers.remove(2)       # [1, 10, 3, 4]
+print(numbers.pop())    # 4, список станет [1, 10, 3]
+print(numbers[1:3])     # [10, 3]
+</code></pre>
+
+<h2>Полезные особенности</h2>
+<ul>
+    <li>Строки можно соединять (конкатенировать) с помощью +: "Hello" + " World" даст "Hello World".</li>
+    <li>Списки тоже можно объединять: [1, 2] + [3, 4] станет [1, 2, 3, 4].</li>
+    <li>Для проверки наличия элемента используется оператор in: "a" in "cat" вернёт True, а 5 in [1, 2, 3] — False.</li>
+</ul>
+
+<h2>Итог</h2>
+<p>Строки и списки — мощные инструменты для работы с данными. Строки хороши для обработки текста, а списки — для хранения и изменения наборов данных. Оба типа поддерживают индексацию и срезы, но списки более гибкие благодаря своей изменяемости.</p>
+
+<h1>Условные операторы и циклы в Python</h1>
+
+<h2>Введение</h2>
+<p>Условные операторы и циклы являются основными элементами для написания логики в программах на Python. Понимание их работы позволяет создавать более сложные и интерактивные приложения.</p>
+
+<h2>1. Условные операторы</h2>
+<p><strong>Условные операторы</strong> позволяют программе принимать решения и выполнять различные действия в зависимости от заданных условий. В Python используются операторы <code>if</code>, <code>elif</code> и <code>else</code>.</p>
+
+<h3>Синтаксис:</h3>
+<pre><code>
+x = 10
+if x > 0:
+print("Число положительное")
+elif x == 0:
+    print("Число равно нулю")
+else:
+    print("Число отрицательное")
+</code></pre>
+
+<h2>2. Циклы</h2>
+<p><strong>Циклы</strong> позволяют выполнять один и тот же код несколько раз. В Python есть два основных типа: <code>for</code> и <code>while</code>.</p>
+
+<h3>Цикл for</h3>
+<p>Цикл <code>for</code> используется, когда известно, сколько раз нужно повторить код.</p>
+<pre><code>
+fruits = ["яблоко", "банан", "груша"]
+for fruit in fruits:
+    print(fruit)
+</code></pre>
+
+<h3>Цикл while</h3>
+<p>Цикл <code>while</code> продолжает выполняться, пока заданное условие истинно.</p>
+<pre><code>
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+</code></pre>
+
+<h1>Видеолекция</h1>
+    <iframe width="720" height="405" src="https://vk.com/video_ext.php?oid=-227088167&id=456239047&hash=57aefff351240664" frameBorder="0"  allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+    </iframe>
+
+<h1>Тест по пройденной теме</h1>
+
+<form id="quiz-form">
+    <div class="question">
+        <p>Вопрос 1: Что выведет следующий код?<br>
+        <code>
+            s = "Python"<br>
+            print(s[2])<br>
+        </code>
+        </p>
+        <label><input type="radio" name="q1" value="A"> а) P</label><br>
+        <label><input type="radio" name="q1" value="B"> б) y</label><br>
+        <label><input type="radio" name="q1" value="C"> в) t</label><br>
+        <label><input type="radio" name="q1" value="D"> г) h</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 2: Какой срез вернет слово "cat" из строки "concatenation"?<br></p>
+        <label><input type="radio" name="q2" value="A"> а) [0:3]</label><br>
+        <label><input type="radio" name="q2" value="B"> б) [3:6]</label><br>
+        <label><input type="radio" name="q2" value="C"> в) [1:4]</label><br>
+        <label><input type="radio" name="q2" value="D"> г) [6:9]</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 3: Что сделает метод .append(5) для списка [1, 2, 3]?<br></p>
+        <label><input type="radio" name="q3" value="A"> а) Заменит 3 на 5</label><br>
+        <label><input type="radio" name="q3" value="B"> б) Добавит 5 в конец списка</label><br>
+        <label><input type="radio" name="q3" value="C"> в) Удалит последний элемент и добавит 5</label><br>
+        <label><input type="radio" name="q3" value="D"> г) Ничего не сделает</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 4: Что выведет код?<br>
+        <code>
+            lst = ["a", "b", "c"]<br>
+            lst.remove("b")<br>
+            print(lst)<br>
+        </code>
+        </p>
+        <label><input type="radio" name="q4" value="A"> а) ["a", "c"]</label><br>
+        <label><input type="radio" name="q4" value="B"> б) ["a", "b", "c"]</label><br>
+        <label><input type="radio" name="q4" value="C"> в) ["b", "c"]</label><br>
+        <label><input type="radio" name="q4" value="D"> г) Ошибка</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 5: Какой метод строки переведет "hello" в "HELLO"?<br></p>
+        <label><input type="radio" name="q5" value="A"> а) .capitalize()</label><br>
+        <label><input type="radio" name="q5" value="B"> б) .upper()</label><br>
+        <label><input type="radio" name="q5" value="C"> в) .lower()</label><br>
+        <label><input type="radio" name="q5" value="D"> г) .replace()</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 6: Что выведет следующий код?<br>
+        <code>
+            x = 7<br>
+            if x > 5:<br>
+            &nbsp;&nbsp;&nbsp;print("Больше 5")<br>
+            else:<br>
+            &nbsp;&nbsp;&nbsp;print("Меньше или равно 5")<br>
+        </code>
+        </p>
+        <label><input type="radio" name="q6" value="A"> а) Больше 5</label><br>
+        <label><input type="radio" name="q6" value="B"> б) Меньше или равно 5</label><br>
+        <label><input type="radio" name="q6" value="C"> в) Ничего не выведет</label><br>
+        <label><input type="radio" name="q6" value="D"> г) Ошибка</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 7: Какой оператор используется для проверки дополнительного условия после if?<br></p>
+        <label><input type="radio" name="q7" value="A"> а) else</label><br>
+        <label><input type="radio" name="q7" value="B"> б) elif</label><br>
+        <label><input type="radio" name="q7" value="C"> в) while</label><br>
+        <label><input type="radio" name="q7" value="D"> г) for</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 8: Что выведет этот цикл?<br>
+        <code>
+            for i in range(3):<br>
+            &nbsp;&nbsp;&nbsp;print(i)<br>
+        </code>
+        </p>
+        <label><input type="radio" name="q8" value="A"> а) 1 2 3</label><br>
+        <label><input type="radio" name="q8" value="B"> б) 0 1 2</label><br>
+        <label><input type="radio" name="q8" value="C"> в) 0 1 2 3</label><br>
+        <label><input type="radio" name="q8" value="D"> г) 3 2 1 0</label>
+    </div>
+
+    <div class="question">
+        <p>Вопрос 9: Какой цикл лучше использовать, если заранее неизвестно, сколько раз нужно повторить действие?<br></p>
+        <label><input type="radio" name="q9" value="A"> а) for</label><br>
+        <label><input type="radio" name="q9" value="B"> б) while</label><br>
+        <label><input type="radio" name="q9" value="C"> в) Оба подойдут</label><br>
+        <label><input type="radio" name="q9" value="D"> г) Ни один из них</label>
+    </div>
+
+    <button type="submit">Отправить ответы</button>
+    <br>
+    <a href="main.html#thirdone" class="button-link">Завершить обучение</a>
+</form>
+
+<script>
+    document.getElementById('quiz-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем отправку формы
+
+        // Правильные ответы
+        const correctAnswers = {
+            q1: 'C', // Гвидо ван Россум
+            q2: 'B', // Читаемость кода
+            q3: 'B', // Django
+            q4: 'A', // Pandas
+            q5: 'B', // python hello.py
+        };
+
+        let score = 0;
+        const totalQuestions = 8;
+
+        // Проверяем ответы
+        for (let i = 1; i <= totalQuestions; i++) {
+            const questionName = 'q' + i;
+            const selectedAnswer = document.querySelector('input[name="' + questionName + '"]:checked');
+            if (selectedAnswer) {
+                if (selectedAnswer.value === correctAnswers[questionName]) {
+                    score++;
+                }
+            }
+        }
+
+        // Выводим результат
+        alert('Вы ответили правильно на ' + score + ' из ' + totalQuestions + ' вопросов.');
+    });
+</script>
+
+</body>
+</html>

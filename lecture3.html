@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Условные операторы и циклы в Python</title>
+</head>
+<body>
+    <h1>Условные операторы и циклы в Python</h1>
+
+    <h2>Введение</h2>
+    <p>Условные операторы и циклы являются основными элементами для написания логики в программах на Python. Понимание их работы позволяет создавать более сложные и интерактивные приложения.</p>
+
+    <h2>1. Условные операторы</h2>
+    <p><strong>Условные операторы</strong> позволяют программе принимать решения и выполнять различные действия в зависимости от заданных условий. В Python используются операторы <code>if</code>, <code>elif</code> и <code>else</code>.</p>
+
+    <h3>Синтаксис:</h3>
+    <pre><code>
+x = 10
+if x > 0:
+    print("Число положительное")
+elif x == 0:
+    print("Число равно нулю")
+else:
+    print("Число отрицательное")
+</code></pre>
+
+    <h2>2. Циклы</h2>
+    <p><strong>Циклы</strong> позволяют выполнять один и тот же код несколько раз. В Python есть два основных типа: <code>for</code> и <code>while</code>.</p>
+
+    <h3>Цикл for</h3>
+    <p>Цикл <code>for</code> используется, когда известно, сколько раз нужно повторить код.</p>
+    <pre><code>
+fruits = ["яблоко", "банан", "груша"]
+for fruit in fruits:
+    print(fruit)
+</code></pre>
+
+    <h3>Цикл while</h3>
+    <p>Цикл <code>while</code> продолжает выполняться, пока заданное условие истинно.</p>
+    <pre><code>
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+</code></pre>
+
+    <h2>Итог</h2>
+    <p>С помощью условных операторов, таких как <code>if</code>, <code>elif</code> и <code>else</code>, мы можем управлять потоком программы. Циклы <code>for</code> и <code>while</code> позволяют создавать повторяющиеся действия, что является основой для написания более сложных и полезных программ.</p>
+
+
+    <h1>Видеолекция</h1>
+    <iframe width="720" height="405" src="https://rutube.ru/play/embed/7155e12234a6fbcdbc4a7f27a3bda072" frameBorder="0"  allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+    </iframe>
+
+
+    <h1>Тест по пройденной теме</h1>
+
+    <form id="quiz-form">
+        <div class="question">
+            <p>Вопрос 1: Что выведет следующий код?<br>
+            <code>
+                x = 7<br>
+                if x > 5:<br>
+                &nbsp;&nbsp;&nbsp;print("Больше 5")<br>
+                else:<br>
+                &nbsp;&nbsp;&nbsp;print("Меньше или равно 5")<br>
+            </code>
+            </p>
+            <label><input type="radio" name="q1" value="A"> а) Больше 5</label><br>
+            <label><input type="radio" name="q1" value="B"> б) Меньше или равно 5</label><br>
+            <label><input type="radio" name="q1" value="C"> в) Ничего не выведет</label><br>
+            <label><input type="radio" name="q1" value="D"> г) Ошибка</label>
+        </div>
+    
+        <div class="question">
+            <p>Вопрос 2: Какой оператор используется для проверки дополнительного условия после if?<br></p>
+            <label><input type="radio" name="q2" value="A"> а) else</label><br>
+            <label><input type="radio" name="q2" value="B"> б) elif</label><br>
+            <label><input type="radio" name="q2" value="C"> в) while</label><br>
+            <label><input type="radio" name="q2" value="D"> г) for</label>
+        </div>
+    
+        <div class="question">
+            <p>Вопрос 3: Что выведет этот цикл?<br>
+            <code>
+                for i in range(3):<br>
+                &nbsp;&nbsp;&nbsp;print(i)<br>
+            </code>
+            </p>
+            <label><input type="radio" name="q3" value="A"> а) 1 2 3</label><br>
+            <label><input type="radio" name="q3" value="B"> б) 0 1 2</label><br>
+            <label><input type="radio" name="q3" value="C"> в) 0 1 2 3</label><br>
+            <label><input type="radio" name="q3" value="D"> г) 3 2 1 0</label>
+        </div>
+    
+        <div class="question">
+            <p>Вопрос 4: Какой цикл лучше использовать, если заранее неизвестно, сколько раз нужно повторить действие?<br></p>
+            <label><input type="radio" name="q4" value="A"> а) for</label><br>
+            <label><input type="radio" name="q4" value="B"> б) while</label><br>
+            <label><input type="radio" name="q4" value="C"> в) Оба подойдут</label><br>
+            <label><input type="radio" name="q4" value="D"> г) Ни один из них</label>
+        </div>
+    
+        <div class="question">
+            <p>Вопрос 5: Что произойдет в этом коде?<br>
+            <code>
+                n = 0<br>
+                while n < 3:<br>
+                &nbsp;&nbsp;&nbsp;print(n)<br>
+                &nbsp;&nbsp;&nbsp;n += 1<br>
+            </code>
+            </p>
+            <label><input type="radio" name="q5" value="A"> а) Выведет 0 1 2</label><br>
+            <label><input type="radio" name="q5" value="B"> б) Выведет 1 2 3</label><br>
+            <label><input type="radio" name="q5" value="C"> в) Выведет 0 1 2 3</label><br>
+            <label><input type="radio" name="q5" value="D"> г) Зациклится бесконечно</label>
+        </div>
+    
+        <button type="submit">Проверить ответы</button>
+        <br>
+        <a href="main.html#thirdone" class="button-link">Завершить обучение</a>
+    </form>
+   
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+
+            // Правильные ответы
+            const correctAnswers = {
+                q1: 'A', // Гвидо ван Россум
+                q2: 'B', // Читаемость кода
+                q3: 'B', // Django
+                q4: 'B', // Pandas
+                q5: 'A', // python hello.py
+            };
+
+            let score = 0;
+            const totalQuestions = 8;
+
+            // Проверяем ответы
+            for (let i = 1; i <= totalQuestions; i++) {
+                const questionName = 'q' + i;
+                const selectedAnswer = document.querySelector('input[name="' + questionName + '"]:checked');
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[questionName]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Выводим результат
+            alert('Вы ответили правильно на ' + score + ' из ' + totalQuestions + ' вопросов.');
+        });
+    </script>
+
+</body>
+</html>
